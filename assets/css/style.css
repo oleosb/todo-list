@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+}
+
+html{
+        font-family: 'Roboto', sans-serif;
+}
+
+body{
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 3em;
+        overflow-x: hidden;
+        background-color: #EEEDE7;
+        margin: auto 0 0 0;
+}
+
+h1{
+        color: #274472;
+        font-size: 3em;
+}
+
+.inpt-container{
+        margin: 2em 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: transparent;
+}
+
+.input{
+        width: 14em;
+        height: 2em;
+        padding: 0 .5em;
+        font-size: 1.5em;
+        color: #274472;
+        border: none;
+}
+
+.input:focus{
+        outline-color: #274472;
+}
+
+.btn{
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 300;
+        background-color: #274472;
+        border: none;
+        color: #EEEDE7;
+        cursor: pointer;
+        user-select: none;
+        transition:  transform .2s ease;
+}
+
+.btn:active{
+        transform: scale(.98);
+}
+
+.todos{
+        width: 21em;
+}
+
+.todo{
+        width: 100%;
+        padding: 1em .5em;
+        color: #274472;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+}
+
+.todo.checked{
+        text-decoration:line-through;
+}
+
+.todo+.todo{
+        margin: .5em 0 0 0;
+}
+
+.instructions{
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        font-size: .8em;
+}
